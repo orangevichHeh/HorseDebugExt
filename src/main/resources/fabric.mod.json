@@ -1,0 +1,39 @@
+{
+	"schemaVersion": 1,
+	"id": "horsedebugext",
+	"version": "${version}",
+	"name": "Horse Debug Extended",
+	"description": "Minecraft mod to get information about entities",
+	"authors": [
+		"ATE47",
+		"OrangevichHeh"
+	],
+	"contact": {
+		"homepage": "https://github.com/ate47/HorseInfo/",
+		"sources": "https://github.com/orangevichHeh/HorseDebugExt/tree/1.21-fabric",
+		"issues": "https://github.com/orangevichHeh/HorseDebugExt/issues"
+	},
+	"license": "GNU GPL3",
+	"icon": "assets/horsedebugext/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.orange.horsedebugext.HorseDebug"
+		],
+		"client": [
+			"net.orange.horsedebugext.HorseDebugClient"
+		]
+	},
+	"mixins": [
+		"horsedebugext.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
